@@ -2,10 +2,10 @@
 
 
 /**
- * main - "print Programming is like building a multilingual 
- * puzzle, followes by a newline.
- * Return: Always 0.
+ * main - A program that print a line with put function
+ * Return: 0 (Success)
  */
+
 int main(void)
 
 {
