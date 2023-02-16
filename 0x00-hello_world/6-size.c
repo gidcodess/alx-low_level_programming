@@ -3,7 +3,7 @@
 /**
  * main - Print the size of various types a based on
  * the computer it as compiled and run on..
- * Return: 0 (Success)
+ * Return: Always 0.
  */
 
 int main(void)
