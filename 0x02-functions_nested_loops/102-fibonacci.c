@@ -8,22 +8,23 @@
 int main(void)
 
 {
-	int i = 0;
-	long j = 1, k = 2;
+	int n1 = 1, n2 = 2, next, i;
 
-	while (i < 50)
+	printf("%d, %d, ", n1, n2);
+
+	for (i = 3; i <= 50; i++)
 	{
-	printf("%ld", j);
-	else if (i == 1)
-	printf(", %ld", k);
-	else
+	next = n1 + n2;
+	printf("%d", next);
+	n1 = n2;
+	n2 = next;
+
+	if (i != 50)
 	{
-	k += j;
-	j = k - j;
-	printf(", %d", k);
+	printf(", ");
 	}
-	++i;
 	}
 	printf("\n");
-	return (0);
+
+	return 0;
 }
