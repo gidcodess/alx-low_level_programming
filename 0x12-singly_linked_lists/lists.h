@@ -2,19 +2,16 @@
 #define LISTS_H
 
 #include <stdlib.h>
-#include <stddef.h>
-#include <string.h>
 
 /**
- * struct lists_s - singly linked list
- * @str: string - (malloc'ed string)
+ * struct list_s - singly linked list node
+ * @str: string contained in the node
  * @len: length of the string
- * @next: points to the next node
+ * @next: pointer to the next node in the list
  *
- * Description: Singly linked list node structure
- * for project
- *
+ * Description: defines a node structure for a singly linked list.
  */
+
 typedef struct list_s
 {
 	char *str;
@@ -29,3 +26,4 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
 #endif
+
